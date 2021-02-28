@@ -14,9 +14,9 @@ const Card = (props) => {
             </Carousel>
             <div className= "center-card">
             <h2 className="text-2xl mb-2"> {props.name}</h2>
-            <p className="mb-2">Type: {props.servesCuisine}</p> 
+            {props.servesCuisine && <p className="mb-2">Type: {props.servesCuisine}</p> }
             {props.aggregateRatings && <p>Rating: {props.aggregateRatings.thefork.ratingValue}</p>}
-            <p>Price average: {props.priceRange}</p> 
+            {props.priceRange && <p>Price average: {props.priceRange}</p> }
             {props.address && <p>Address: {props.address.street}, {props.address.postalCode} {props.address.locality}</p>}
             </div>
         </div>
