@@ -3,7 +3,7 @@
  
  const Navbar = ({toggle}) => {
      return (
-         <nav className="flex justify-between items-center h-16 bg-yellow-100 text-black shadow-sm font-mono fixed w-full" role="navigation">
+         <nav className="flex justify-between items-center h-16 bg-yellow-100 text-black shadow-sm font-mono fixed w-full z-10" role="navigation">
              <a href="/" className='pl-8 text-yellow-800 hover:no-underline  hover:text-black'> Mo-ve-ki </a>
              <div className=' px-4 cursor-pointer md:hidden' onClick={toggle}>
              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

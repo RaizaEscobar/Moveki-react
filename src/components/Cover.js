@@ -187,7 +187,7 @@ const Cover = (props) => {
     }
 
     return (
-        <div id="home" className="bg-white h-screen flex flex-col justify-center items-center pt-40 md:pt-20">
+        <div id="home" className="bg-white min-h-screen flex flex-col justify-center items-center pt-48 md:pt-20">
         {isLoading && <Spinner animation="border" className="fixed"/>}
             <img className=" mb-16" src={logo} alt="logo" />
 
