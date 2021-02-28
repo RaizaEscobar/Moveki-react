@@ -163,7 +163,7 @@ const Cover = (props) => {
         let filteredRestaurants = [];
         if (postCode) {
             filteredRestaurants = restaurants.filter(function (restaurant) {
-                return restaurant.address.postalCode == postCode;
+                return restaurant.address.postalCode === postCode;
             });
         }
         if (filteredRestaurants.length > 0) {
