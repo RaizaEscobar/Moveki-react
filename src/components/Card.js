@@ -6,10 +6,10 @@ import {Carousel} from 'react-bootstrap'
 const Card = (props) => {
     return (
         <div className= "menu-card">
-            {!props.photosCarousel && <img src={ImageOne} alt="prueba" className="h-full rounded mb-20 shadow"/>}
+            {!props.photosCarousel && <img src={ImageOne} alt="prueba" className="max-h-48 rounded mb-20 shadow md:max-h-80"/>}
             <Carousel>
                 {props.photosCarousel && props.photosCarousel.map((ele, index) => {
-                    return <Carousel.Item><img src={ele["612x344"]} alt="restaurant" className="h-full rounded mb-20 shadow"/></Carousel.Item>
+                    return <Carousel.Item key={index}><img src={ele.source} alt="restaurant" className="max-h-48 rounded mb-20 shadow md:max-h-80"/></Carousel.Item>
                 })}
             </Carousel>
             <div className= "center-card">
